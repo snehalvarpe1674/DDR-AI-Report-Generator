@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DDR Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>📊 Generated DDR Report</h2>
+
+    <div class="report-box">
+        <pre>{{ report }}</pre>
+    </div>
+
+    <a href="/download">
+        <button class="btn">⬇️ Download Report</button>
+    </a>
+
+</div>
+
+</body>
+</html>

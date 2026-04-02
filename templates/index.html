@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI DDR Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">🏠 AI DDR Report Generator</h1>
+    <p class="subtitle">Upload Inspection & Thermal Reports</p>
+
+    <form action="/generate" method="post" enctype="multipart/form-data" class="upload-form">
+
+        <div class="file-box">
+            <label>📄 Inspection Report</label>
+            <input type="file" name="inspection" required>
+        </div>
+
+        <div class="file-box">
+            <label>🌡️ Thermal Report</label>
+            <input type="file" name="thermal" required>
+        </div>
+
+        <button type="submit" class="btn">🚀 Generate Report</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
